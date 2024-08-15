@@ -5,8 +5,8 @@ pipeline {
         AWS_ACCOUNT_ID = "654654450756"
         REGION = "ap-south-1"
         ECR_URL = "${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com"
-        IMAGE_NAME = "ilasingh20/new-demo-applications:new-demo-applications-v.1.${env.BUILD_NUMBER}"
-        ECR_IMAGE_NAME = "${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/new-demo-applications:new-demo-applications-v.1.${env.BUILD_NUMBER}"
+        IMAGE_NAME = "ilasingh20/new-demo-app:new-demo-app-v.1.${env.BUILD_NUMBER}"
+        ECR_IMAGE_NAME = "${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/new-demo-app:new-demo-app-v.1.${env.BUILD_NUMBER}"
     }
 
     options {
